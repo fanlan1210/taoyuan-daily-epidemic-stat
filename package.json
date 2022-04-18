@@ -8,6 +8,7 @@
     "node": "14"
   },
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "axios": "^0.26.1"
   }
 }
