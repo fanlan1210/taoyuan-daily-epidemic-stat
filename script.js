@@ -1,4 +1,4 @@
-fetch('https://od.cdc.gov.tw/eic/covid19/covid19_tw_stats.csv')
+fetch('https://www.cwb.gov.tw/V7/forecast/taiwan/Taipei_City.htm')
   .then(function(response) {
       if(!response.ok) throw new Error('Cannot fetch data!');
       return response.text();
