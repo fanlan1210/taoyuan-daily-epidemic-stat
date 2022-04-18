@@ -23,7 +23,7 @@ app.get("/stat-today", (req, res)=>{
         }
       }
       foundArea = raw.description.match(reT);
-      console.log(foundArea);
+      //console.log(foundArea);
       const result = {
         total: found[1],
         local: found[2],
