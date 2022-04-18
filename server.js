@@ -13,13 +13,23 @@ app.get("/stat-today", (req, res)=>{
 
       let re = /新增([0-9,]+)例COVID-19確定病例，分別為([0-9,]+)例本土及([0-9,]+)例境外移入/;
       const item = jObj.rss.channel.item
+      let raw,found;
       for(let i=0;i<item.length;i++){
-        let found = item[i].title.match(re);
-        if(found.length>0) break;
+        found = item[i].title.match(re);
+        if(found.length>0) {
+          raw = item[i];
+          break;
+        }
       }
-    
+      console.log(found);
+      const result = {
+        total: found[1],
+        local: found[2],
+        remote: found[3],
+        date: raw.guid.slice(5,10)
+      }
       //res.set('Content-Type', 'application/json');
-      res.json({status:"OK"});
+      res.json(result);
     })
     .catch( (err)=>{console.log(err);} )
 });
