@@ -1,9 +1,9 @@
-.bg-skyblue {
-  background-color: #c1dfea;
+.bg-primary {
+  background-color: #E4EB83;
 }
 
-.bg-darkblue {
-  background-color: #7bb6c6;
+.bg-darkprimary {
+  background-color: #C7BF67;
 }
 
 .bg-lightgray {
@@ -18,8 +18,8 @@
   background-color: #f6c86a;
 }
 
-.text-deepblue {
-  color: #213e5e;
+.text-primary {
+  color: #474525;
 }
 
 @import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
