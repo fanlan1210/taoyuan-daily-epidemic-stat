@@ -19,17 +19,14 @@
     <title>窩不知道</title>
 
     <!-- Meta tags for SEO and social sharing -->
-    <link rel="canonical" href="https://taoyuan-daily-epidemic-info.glitch.me/" />
-    <meta
-      name="description"
-      content="（待補）"
+    <link
+      rel="canonical"
+      href="https://taoyuan-daily-epidemic-info.glitch.me/"
     />
+    <meta name="description" content="（待補）" />
     <meta name="robots" content="index,nofollow" />
-    <meta property="og:title" content="Hello World!" />
-    <meta
-      property="og:description"
-      content="（待補）"
-    />
+    <meta property="og:title" content="窩不知道" />
+    <meta property="og:description" content="（待補）" />
     <!--meta
       property="og:image"
       content=""
@@ -37,64 +34,48 @@
     <meta name="twitter:card" content="summary" />
 
     <!-- Import the webpage's stylesheet -->
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="/style.css" />
 
     <!-- Import the webpage's javascript file -->
     <script src="https://unpkg.com/vue@3"></script>
     <script src="/script.js" defer></script>
-    
   </head>
-  <body class="bg-darkblue">
-    <div class="bg-skyblue">
+  <body class="bg-darkprimary">
+    <div class="bg-primary">
       <div class="container text-center mx-auto p-8">
-        <p class="text-deepblue p-4 text-2xl">
-          疫情整理（0418）
-        </p>
-        <div class="bg-lightgray mb-1 p-1 rounded-3xl">
+        <p class="text-deepblue p-4 text-2xl">疫情整理（0418）</p>
+        <div class="bg-lightgray mb-2 p-1 rounded-3xl">
           <div class="bg-error m-1 p-4 rounded-3xl text-white">
-            <p class="text-xl p-2">
-              本日新增確診
-            </p>
-            <p class="text-5xl font-medium">
-              1480
-            </p>
+            <p class="text-xl pb-1">本日新增確診</p>
+            <p class="text-5xl font-medium p-2">1480</p>
           </div>
-          <div class="bg-error m-1 p-4 rounded-3xl text-white">
-            <p class="text-xl p-2">
-              本土
-            </p>
-            <p class="text-5xl font-medium">
-              1390
-            </p>
-          </div>
-          <div class="bg-error m-1 p-4 rounded-3xl text-white">
-            <p class="text-xl pb-2">
-              境外移入
-            </p>
-            <p class="text-5xl font-medium">
-              90
-            </p>
+          <div class="flex w-100">
+            <div class="flex-1 bg-error m-1 p-4 rounded-3xl text-white">
+              <p class="text-xl pb-1">本土新增</p>
+              <p class="text-5xl font-medium p-2">1390</p>
+            </div>
+            <div class="flex-1 bg-error m-1 p-4 rounded-3xl text-white">
+              <p class="text-xl pb-1">境外移入</p>
+              <p class="text-5xl font-medium p-2">90</p>
+            </div>
           </div>
         </div>
         <div class="bg-lightgray p-1 rounded-3xl">
           <div class="bg-warning m-1 p-4 rounded-3xl">
-            <p class="text-xl p-2">
-              桃園新增
-            </p>
-            <p class="text-5xl font-medium">
-              187
-            </p>
+            <p class="text-xl pb-1">桃園新增</p>
+            <p class="text-5xl font-medium p-2">187</p>
           </div>
-          
         </div>
       </div>
-      <div class="bg-darkblue h-100">
+      <div class="h-100">
         <p class="text-center text-deepblue">
-        以上來源以中央流行疫情指揮中心為準
-      </p>
+          以上來源以中央流行疫情指揮中心為準
+        </p>
       </div>
     </div>
-
   </body>
 </html>
