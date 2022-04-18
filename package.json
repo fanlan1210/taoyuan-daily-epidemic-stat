@@ -1,4 +1,13 @@
 {
   "name": "taoyuan-daily-epidemic-info",
-  "version": "0.0.0"
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": "14"
+  },
+  "dependencies": {
+    "express": "^4.17.3"
+  }
 }
