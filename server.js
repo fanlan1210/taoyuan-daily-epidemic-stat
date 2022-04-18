@@ -11,8 +11,15 @@ app.get("/stat-today", (req, res)=>{
       const parser = new XMLParser();
       let jObj = parser.parse(data.data);
 
+      let re = /新增([0-9,]+)例COVID-19確定病例，分別為([0-9,]+)例本土及([0-9,]+)例境外移入/;
+      const item = jObj.rss.channel.item
+      for(let i=0;i<item.length;i++){
+        let found = item[i].title.match(re);
+        if(found.length>0) break;
+      }
+    
       //res.set('Content-Type', 'application/json');
-      res.json(jObj.rss.channel.item);
+      res.json({status:"OK"});
     })
     .catch( (err)=>{console.log(err);} )
 });
