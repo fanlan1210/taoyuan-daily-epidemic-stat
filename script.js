@@ -1,4 +1,4 @@
-fetch('https://www.cdc.gov.tw/RSS/RssXml/Hh094B49-DRwe2RR4eFfrQ?type=1')
+fetch('https://od.cdc.gov.tw/eic/covid19/covid19_tw_stats.csv')
   .then(function(response) {
       if(!response.ok) throw new Error('Cannot fetch data!');
       return response.text();
