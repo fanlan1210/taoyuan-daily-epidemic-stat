@@ -1,0 +1,26 @@
+.bg-skyblue {
+  background-color: #c1dfea;
+}
+
+.bg-lightgray {
+  background-color: #eeedee;
+}
+
+.bg-error {
+  background-color: #ea6070;
+}
+
+.bg-warning {
+  background-color: #f6c86a;
+}
+
+.text-deepblue {
+  color: #213e5e;
+}
+
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+
+body {
+  font-family: "cwTeXYen", sans-serif;
+}
