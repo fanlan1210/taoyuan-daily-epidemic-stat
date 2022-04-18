@@ -16,12 +16,16 @@ const vm = Vue.createApp({
           return response.json();
       })
       .then( (data)=>{
-        this.total = data.todal;
+        this.date = data.date;
+        this.total = data.total;
         this.local = data.local;
         this.remote = data.remote;
         this.taoyuan = data.area;
       });
     }
+  },
+  beforeMount(){
+    this.fetchData();
   }
 });
 
