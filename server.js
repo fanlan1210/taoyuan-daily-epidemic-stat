@@ -13,11 +13,12 @@ app.get("/stat-today", (req, res)=>{
 
       let re = /新增([0-9,]+)例COVID-19確定病例，分別為([0-9,]+)例本土及([0-9,]+)例境外移入/;
       let reT = /桃園市\(([0-9,]+)例\)/;
-      const item = jObj.rss.channel.item
+      const item = jObj.rss.channel.item;
+      //console.log(item);
       let raw,found, foundArea;
       for(let i=0;i<item.length;i++){
         found = item[i].title.match(re);
-        if(found.length>0) {
+        if(found) {
           raw = item[i];
           break;
         }
@@ -28,7 +29,7 @@ app.get("/stat-today", (req, res)=>{
         total: found[1],
         local: found[2],
         remote: found[3],
-        area: foundArea.length > 0 ? foundArea[1] : 0,
+        area: foundArea ? foundArea[1] : 0,
         date: raw.guid.slice(5,10)
       }
       //res.set('Content-Type', 'application/json');
