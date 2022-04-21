@@ -5,7 +5,8 @@ const vm = Vue.createApp({
       total: "*",
       local: "*",
       remote: "*",
-      taoyuan: "*"
+      taoyuan: "*",
+      link: "#"
     }
   },
   methods: {
@@ -21,6 +22,7 @@ const vm = Vue.createApp({
         this.local = data.local;
         this.remote = data.remote;
         this.taoyuan = data.area;
+        this.link = data.link;
       });
     }
   },
