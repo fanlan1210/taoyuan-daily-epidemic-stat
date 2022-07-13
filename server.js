@@ -11,7 +11,7 @@ app.get("/stat-today", (req, res)=>{
       const parser = new XMLParser();
       let jObj = parser.parse(data.data);
 
-      let re = /新增([0-9,]+)例COVID-19確定病例，分別為([0-9,]+)例本土及([0-9,]+)例境外移入/;
+      let re = /新增([0-9,]+)例COVID-19確定病例，分別為([0-9,]+)例本土個案及([0-9,]+)例境外移入/;
       let reT = /桃園市\(([0-9,]+)例\)/; // 可自行修改為欲顯示的縣市
       const item = jObj.rss.channel.item;
       //console.log(item);
